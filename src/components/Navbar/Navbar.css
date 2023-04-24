@@ -1,0 +1,53 @@
+.app__navbar {
+  background-color: var(--black-web);
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 2px solid white;
+}
+
+.app__navbar-logo_img {
+  width: 80px;
+  position: relative;
+  z-index: 15;
+}
+
+.app__navbar-logo::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  margin-top: 15px;
+  margin-left: 15px;
+  background: linear-gradient(
+    90deg,
+    rgb(215, 30, 30),
+    rgb(221, 135, 65),
+    rgb(235, 223, 60),
+    rgb(146, 232, 135),
+    rgb(170, 238, 193),
+    rgb(169, 243, 237),
+    rgb(167, 200, 249)
+  );
+  background-size: 400% 400%;
+  animation: anim 2.5s infinite ease-in-out;
+  z-index: 1;
+}
+
+.app__navabr-content_second-download {
+  background: var(--orange-web);
+  display: flex;
+  padding: 12px;
+  gap: 10px;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+
+  color: var(--white-web);
+  letter-spacing: .9px;
+}

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+
+:root {
+  --chili-red: #ef271bff;
+  --orange-web: #fca311ff;
+  --air-force-blue: #5c91adff;
+  --black-web: #121212;
+  --white-web: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Aldrich", sans-serif;
+}
+
+@keyframes anim {
+  0% {
+    background-position: 0.5%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
