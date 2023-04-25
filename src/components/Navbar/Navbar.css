@@ -11,7 +11,7 @@
 }
 
 .app__navbar-logo_img {
-  width: 80px;
+  width: 100px;
   position: relative;
   z-index: 15;
 }
@@ -19,8 +19,8 @@
 .app__navbar-logo::before {
   content: "";
   position: absolute;
-  width: 60px;
-  height: 20px;
+  width: 80px;
+  height: 35px;
   margin-top: 15px;
   margin-left: 15px;
   background: linear-gradient(
@@ -40,14 +40,47 @@
 
 .app__navabr-content_second-download {
   background: var(--orange-web);
+  width: 163.72px;
+  height: 54px;
   display: flex;
-  padding: 12px;
+  padding: 17px;
   gap: 10px;
   text-decoration: none;
   justify-content: space-between;
   align-items: center;
+  border: none;
   border-radius: 10px;
 
+  font-family: "Aldrich", sans-serif;
   color: var(--white-web);
-  letter-spacing: .9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+
+  cursor: pointer;
+  transition: .3s;
+}
+
+.line {
+  height: 20px;
+  width: 1px;
+  background-color: var(--white-web);
+}
+
+.app__navabr-content_second-download:hover .line,
+.app__navabr-content_second-download:hover p {
+  display: none;
+}
+.app__navabr-content_second-download:hover .icon-download {
+  margin: auto;
+}
+
+.icon-download {
+  font-size: 1.4em;
+}
+
+
+.icon-check{
+  display: none;
+  margin: auto;
+  font-size: 1.4em;
 }
