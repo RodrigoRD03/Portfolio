@@ -1,32 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
 
 :root {
-  --chili-red: #ef271bff;
-  --orange-web: #fca311ff;
-  --air-force-blue: #5c91adff;
+  --primary-100:#2563eb;
+  --primary-200:#598EF3;
+  --primary-300:#D3E6FE;
+  --accent-100:#d946ef;
+  --accent-200:#fae8ff;
+  --text-100:#cbd5e1;
+  --text-200:#94a3b8;
+  --bg-100:#1e293b;
+  --bg-200:#334155;
+  --bg-300:#475569;
+    
   --black-web: #121212;
   --white-web: #ffffff;
   --green-web : #55DD33;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Aldrich", sans-serif;
-}
-
-@keyframes anim {
-  0% {
-    background-position: 0.5%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
 }
