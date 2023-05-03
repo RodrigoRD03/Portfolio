@@ -87,9 +87,9 @@
   position: relative;
 }
 .animation-container h1 {
-  border-bottom: 5px dashed var(--accent-100);
+  border-bottom: 5px dashed #e6e20e;
   width: max-content;
-  color: #e6e20e;
+  color: var(--primary-200);
   position: relative;
 }
 
@@ -127,7 +127,6 @@
   animation: float 3s infinite ease-in-out;
   transform: translate(0, 0);
   position: relative;
-  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -179,12 +178,35 @@
 @media screen and (max-width: 671px) {
   .app__home {
     flex-direction: column-reverse;
-    gap: 20px;
+    justify-content: space-around;
   }
 
   .app__home-links {
     flex-direction: row;
     padding-bottom: 5px;
+  }
+
+  .app__home-img img {
+    margin-top: 80px;
+  }
+  .app__home-img::after {
+    right: -55px;
+    top: 330px;
+  }
+  .app__home-img::before {
+
+    top: 195px;
+  }
+  .icons-counts {
+    font-size: .9em;
+  }
+  .icons-counts:hover::after {
+    background-color: var(--text-100);
+    display: flex;
+    width: 25px;
+    height: 25px;
+    top: -5.5px;
+    right: -5px;
   }
 }
 @media screen and (max-width: 362px) {
