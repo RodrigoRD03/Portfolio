@@ -7,6 +7,16 @@
 body {
   font-family: "Aldrich", sans-serif;
   background-color: var(--black-web);
+  min-height: 100%;
+
+}
+
+html {
+  min-height: 100%;
+}
+
+#root{
+  height: 100%;
 }
 
 .bg__Figures {
@@ -14,6 +24,22 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+.bg__clean {
+  background-image: url("../src/assets/bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;   
+  display: none;            
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--primary-100), var(--primary-300));    
+  border-radius: 50vh;   
 }
 
 @keyframes anim {
