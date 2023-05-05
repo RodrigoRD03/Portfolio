@@ -81,7 +81,7 @@ const Home = () => {
       <div className="app__home-text">
         <h1 className="text-hi">Hi, There!</h1>
         <h1 className="text-im">I'm Rodrigo Rodriguez</h1>
-        <div class="animation-container">
+        <div className="animation-container">
           <TypeAnimation
             className="animation"
             sequence={["Frontend Developer.", 2000, "Graphic Designer.", 2000]}
