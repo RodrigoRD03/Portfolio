@@ -50,7 +50,7 @@ const Navbar = () => {
         <img className="app__navbar-logo_img" src={images.logo} alt="Logo" />
       </div>
       <div className="app__navabr-content">
-        <a href="#Contact" className="app__navbar-content_contact navbar-links">
+        <a href="#Proyects" className="app__navbar-content_contact navbar-links">
           <p>Proyects</p>
         </a>
         <a href="#Contact" className="app__navbar-content_contact navbar-links">
@@ -92,7 +92,7 @@ const Navbar = () => {
             <p>Skills</p>
           </a>
           <a
-            href="#Contact"
+            href="#Proyects "
             className="app__navbar-content_contact navbar-links"
           >
             <p>Proyects</p>

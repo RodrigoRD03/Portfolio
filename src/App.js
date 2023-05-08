@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Navbar } from "./components";
-import { Home, About } from "./containers";
+import { Home, About, Skills, Proyects } from "./containers";
 import "./App.css";
 
 const App = () => {
@@ -31,38 +31,8 @@ const App = () => {
           <Navbar />
           <Home />
           <About />
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
-          <p>h</p>
+          <Skills />
+          <Proyects />
         </>
       )}
     </div>
