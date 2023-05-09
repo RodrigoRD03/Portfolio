@@ -44,7 +44,6 @@ const Design = () => {
             key={selectedId}
             layoutId={selectedId}
             className="app__design-image_open"
-            onClick={() => setSelectedId(null)}
           >
             {data.listDesigns.map((item) =>
               item.id === selectedId ? (

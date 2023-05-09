@@ -103,7 +103,7 @@ const listDesigns = [
   },
   {
     id: 7,
-    name: "Ghosrider",
+    name: "Ghostrider",
     image: images.Ghostrider,
   },
   {
