@@ -6,7 +6,7 @@ import {
   BsArrowLeftShort,
   BsArrowRightShort,
 } from "react-icons/bs";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import "./Design.css";
 
 const Design = () => {
@@ -17,9 +17,9 @@ const Design = () => {
     const { current } = scrollRef;
 
     if (direction === "left") {
-      current.scrollLeft -= 800;
+      current.scrollLeft -= 400;
     } else {
-      current.scrollLeft += 800;
+      current.scrollLeft += 400;
     }
   };
 
@@ -29,10 +29,10 @@ const Design = () => {
         <h1>Design</h1>
         <span
           onClick={() => {
-            const sectionProgramming = document.querySelector(
+            const sectionOptions = document.querySelector(
               ".app__proyects-option_designing-open"
             );
-            sectionProgramming.classList.remove("open");
+            sectionOptions.classList.remove("open");
           }}
         >
           <RxCross1 />
@@ -54,9 +54,7 @@ const Design = () => {
           >
             <motion.img
               id={`app__design-image_${item.name}`}
-              className={
-                `app__design-image` 
-              }
+              className={`app__design-image`}
               src={item.image}
             />
           </motion.div>
@@ -73,7 +71,7 @@ const Design = () => {
                   key={item.id}
                   className="app__design-image_open-container"
                 >
-                  <motion.img src={item.image} />
+                  <motion.img src={item.image} className={`${item.size} img-${item.name}_open`} />
                   <motion.button
                     className="app__design-image_open-button"
                     onClick={() => {
@@ -97,9 +95,18 @@ const Design = () => {
           <BsArrowLeftShort onClick={() => scroll("left")} />
         </span>
         <div className="app__design-dots_container">
-          <a href="#app__design-image_BMO" className="app__design-dot_slice"></a>
-          <a href="#app__design-image_Groot" className="app__design-dot_slice"></a>
-          <a href="#app__design-image_Zipo" className="app__design-dot_slice"></a>
+          <a
+            href="#app__design-image_BMO"
+            className="app__design-dot_slice"
+          > </a>
+          <a
+            href="#app__design-image_Groot"
+            className="app__design-dot_slice"
+          > </a>
+          <a
+            href="#app__design-image_Zipo"
+            className="app__design-dot_slice"
+          > </a>
         </div>
         <span className="design__arrow-icon">
           <BsArrowRightShort onClick={() => scroll("right")} />

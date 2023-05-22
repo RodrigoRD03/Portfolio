@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
-  gap : 20px;
+  gap: 20px;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -40,14 +40,13 @@
 .app__design-image {
   height: 370px;
   border-radius: 10px;
-  transition: .3s;
+  transition: 0.3s;
 }
-.app__design-image:not(:hover){
-  transform: scale(.9);
+.app__design-image:not(:hover) {
+  transform: scale(0.9);
 }
 .app__design-image:hover {
   transform: scale(1);
-
 }
 
 .app__design-image_arrows {
@@ -66,7 +65,7 @@
   background-color: var(--bg-100);
   border-radius: 50vh;
   color: var(--white-web);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .gallery__arrow-icon:hover {
@@ -95,9 +94,17 @@
 .app__design-image_open-container {
   height: 100%;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.app__design-image_open-container img {
+.app__design-image_open-container .small {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.app__design-image_open-container .big {
   height: 100%;
   border-radius: 10px;
 }
@@ -132,104 +139,51 @@
   text-decoration: none;
 }
 
-.app__design-dots_container .app__design-dot_slice {
+.app__design-dot_slice {
   height: 10px;
   width: 10px;
   background-color: var(--bg-100);
   border-radius: 50vh;
 }
-
-/* .app__design-image_BMO {
-  bottom: 0;
-  right: 0;
+.app__design-dot_slice {
+  height: 10px;
+  width: 10px;
+  background-color: var(--bg-100);
+  border-radius: 50vh;
+  transition: 0.3s;
 }
-.app__design-image_Bumblebee {
-  bottom: 0;
-  right: 0;
-}
-.app__design-image_Carpe {
-  bottom: 0;
-  right: 0;
-}
-.app__design-image_Cat {
-  bottom: 0;
-  right: 0;
-}
-.app__design-image_Ciberpunk {
-  bottom: 0;
-  right: 0;
-}
-.app__design-image_Fiero {
-  top: 270;
-  right: 0;
-}
-.app__design-image_Ghostrider {
-  bottom: 0;
-  left: 0;
-}
-.app__design-image_Girl {
-  bottom: 0;
-  left: 0;
-}
-.app__design-image_Groot {
-  bottom: 0;
-  left: 0;
-}
-.app__design-image_Gwen {
-  bottom: 0;
-  left: 0;
+.app__design-dot_slice:hover {
+  background-color: var(--white-web);
 }
 
-.app__design-image_Kabuki {
-  bottom: 0;
-  left: 0;
+@media screen and (max-width: 880px) {
+  .app__design-image_open-container .img-Carpe_open,
+  .app__design-image_open-container .img-Ghostrider_open,
+  .app__design-image_open-container .img-Fiero_open,
+  .app__design-image_open-container .img-Girl_open,
+  .app__design-image_open-container .img-Zipo_open {
+    height: 60%;
+  }
 }
-.app__design-image_Mandalorian {
-  bottom: 0;
-  left: 0;
+
+@media screen and (max-width: 660px) {
+  .app__design-image_open-container .img-Fiero_open,
+  .app__design-image_open-container .img-Ghostrider_open {
+    height: 40%;
+  }
 }
-.app__design-image_Miles {
-  bottom: 0;
-  left: 0;
+@media screen and (max-width: 450px) {
+  .app__design-image_open-container .img-Fiero_open {
+    height: 30%;
+  }
 }
-.app__design-image_Robot {
-  bottom: 0;
-  left: 0;
+/* @media screen and (max-width: 600px) {
+  .app__design-image_open-container .big {
+    height: 50%;
+  }
 }
-.app__design-image_Skeleton {
-  top: 0;
-  right: 0;
-}
-.app__design-image_Spiderman {
-  top: 0;
-  right: 0;
-}
-.app__design-image_Spiderpunk {
-  top: 0;
-  right: 0;
-}
-.app__design-image_Sword {
-  top: 0;
-  right: 0;
-}
-.app__design-image_SwordSkeleton {
-  top: 0;
-  left: 0;
-}
-.app__design-image_Venompool {
-  top: 0;
-  left: 0;
-}
-.app__design-image_Walkman {
-  top: 0;
-  left: 0;
-}
-.app__design-image_Waves {
-  top: 0;
-  left: 0;
-}
-.app__design-image_Zipo {
-  top: 0;
-  left: 0;
-}
- */
+@media screen and (max-width: 460px) {
+  .app__design-image_open-container .big {
+    height: 31%;
+  }
+} */

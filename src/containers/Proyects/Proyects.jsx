@@ -57,15 +57,7 @@ const Proyects = () => {
             <FaHandPointer className="icon-pointer icon-two" />
           </span>
         </div>
-        <div
-          className="app__proyects-option_programming-open"
-          onClick={() => {
-            const sectionProgramming = document.querySelector(
-              ".app__proyects-option_programming-open"
-            );
-            sectionProgramming.classList.remove("open");
-          }}
-        >
+        <div className="app__proyects-option_programming-open">
           <Programming />
         </div>
         <div className="app__proyects-option_designing-open">

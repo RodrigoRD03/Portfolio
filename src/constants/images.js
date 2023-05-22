@@ -43,6 +43,12 @@ import VenomPool from "../assets/Design/VenomPool.jpeg";
 import Walkman from "../assets/Design/Walkman.jpeg";
 import Waves from "../assets/Design/Waves.jpeg";
 import Zipo from "../assets/Design/Zipo.jpg";
+import LandingPage from "../assets/Programming/LandingPage.png"
+import CalculatorTip from "../assets/Programming/CalculatorTip.png"
+import Acordion from "../assets/Programming/Acordions.png"
+import TimeTracking from "../assets/Programming/TimeTracking.png"
+import Clock from "../assets/Programming/Clock.png"
+import Card from "../assets/Programming/Card.png"
 
 export default {
   logo,
@@ -90,4 +96,10 @@ export default {
   Walkman,
   Waves,
   Zipo,
+  LandingPage, 
+  CalculatorTip, 
+  Acordion,
+  TimeTracking,
+  Clock,
+  Card,
 };
