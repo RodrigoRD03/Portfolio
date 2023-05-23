@@ -20,6 +20,12 @@
   border-radius: 50vh;
   font-size: 1em;
   font-weight: 600;
+  transition: .3s;
+}
+
+.app__design span:hover {
+  background-color: var(--accent-100);
+  color: var(--black-web);
 }
 
 .app__design-list {

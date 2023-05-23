@@ -28,6 +28,7 @@ const Design = () => {
       <div className="app__design">
         <h1>Design</h1>
         <span
+          className="app___design-close_window"
           onClick={() => {
             const sectionOptions = document.querySelector(
               ".app__proyects-option_designing-open"
@@ -71,7 +72,10 @@ const Design = () => {
                   key={item.id}
                   className="app__design-image_open-container"
                 >
-                  <motion.img src={item.image} className={`${item.size} img-${item.name}_open`} />
+                  <motion.img
+                    src={item.image}
+                    className={`${item.size} img-${item.name}_open`}
+                  />
                   <motion.button
                     className="app__design-image_open-button"
                     onClick={() => {
@@ -95,18 +99,15 @@ const Design = () => {
           <BsArrowLeftShort onClick={() => scroll("left")} />
         </span>
         <div className="app__design-dots_container">
-          <a
-            href="#app__design-image_BMO"
-            className="app__design-dot_slice"
-          > </a>
-          <a
-            href="#app__design-image_Groot"
-            className="app__design-dot_slice"
-          > </a>
-          <a
-            href="#app__design-image_Zipo"
-            className="app__design-dot_slice"
-          > </a>
+          <a href="#app__design-image_BMO" className="app__design-dot_slice">
+            {" "}
+          </a>
+          <a href="#app__design-image_Groot" className="app__design-dot_slice">
+            {" "}
+          </a>
+          <a href="#app__design-image_Zipo" className="app__design-dot_slice">
+            {" "}
+          </a>
         </div>
         <span className="design__arrow-icon">
           <BsArrowRightShort onClick={() => scroll("right")} />
