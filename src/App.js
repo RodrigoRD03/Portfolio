@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Navbar } from "./components";
+import { Footer, Navbar } from "./components";
 import { Home, About, Skills, Proyects } from "./containers";
 import "./App.css";
 
@@ -33,6 +33,7 @@ const App = () => {
           <About />
           <Skills />
           <Proyects />
+          <Footer />
         </>
       )}
     </div>

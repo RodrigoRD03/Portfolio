@@ -49,6 +49,7 @@ import Acordion from "../assets/Programming/Acordions.png"
 import TimeTracking from "../assets/Programming/TimeTracking.png"
 import Clock from "../assets/Programming/Clock.png"
 import Card from "../assets/Programming/Card.png"
+import Inbox from "../assets/Inbox.svg"
 
 export default {
   logo,
@@ -102,4 +103,5 @@ export default {
   TimeTracking,
   Clock,
   Card,
+  Inbox,
 };
